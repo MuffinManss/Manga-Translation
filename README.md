@@ -9,7 +9,7 @@ Wearable glasses that read Japanese manga text and translate it in real time. A 
 ```mermaid
 flowchart LR
     A["Glasses camera<br/>(Raspberry Pi)"] -->|"image over Wi-Fi<br/>POST /ocr"| B["Desktop PC<br/>Flask + manga-ocr"]
-    B -->|"JSON: Japanese text"| A
+    B -->|"Japanese text<br/>(JSON)"| A
     A -.-> C["Translate"] -.-> D["Display on glasses"]
 ```
 
